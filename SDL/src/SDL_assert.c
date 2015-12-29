@@ -30,7 +30,7 @@
 #else  /* fprintf, _exit(), etc. */
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+//#include <unistd.h>
 #endif
 
 static SDL_assert_state
