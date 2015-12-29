@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c0753d06-cf11-43c5-b3e6-d0c8fc86b9f4}</ProjectGuid>
+    <Keyword>DynamicLibrary</Keyword>
+    <ProjectName>wSDL</ProjectName>
+    <RootNamespace>wSDL</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\begin_code.h" />
+    <ClInclude Include="..\include\close_code.h" />
+    <ClInclude Include="..\include\SDL.h" />
+    <ClInclude Include="..\include\SDL_assert.h" />
+    <ClInclude Include="..\include\SDL_atomic.h" />
+    <ClInclude Include="..\include\SDL_audio.h" />
+    <ClInclude Include="..\include\SDL_compat.h" />
+    <ClInclude Include="..\include\SDL_config.h" />
+    <ClInclude Include="..\include\SDL_config_iphoneos.h" />
+    <ClInclude Include="..\include\SDL_config_macosx.h" />
+    <ClInclude Include="..\include\SDL_config_minimal.h" />
+    <ClInclude Include="..\include\SDL_config_nintendods.h" />
+    <ClInclude Include="..\include\SDL_config_pandora.h" />
+    <ClInclude Include="..\include\SDL_config_win32.h" />
+    <ClInclude Include="..\include\SDL_config_wiz.h" />
+    <ClInclude Include="..\include\SDL_copying.h" />
+    <ClInclude Include="..\include\SDL_cpuinfo.h" />
+    <ClInclude Include="..\include\SDL_endian.h" />
+    <ClInclude Include="..\include\SDL_error.h" />
+    <ClInclude Include="..\include\SDL_events.h" />
+    <ClInclude Include="..\include\SDL_haptic.h" />
+    <ClInclude Include="..\include\SDL_joystick.h" />
+    <ClInclude Include="..\include\SDL_keyboard.h" />
+    <ClInclude Include="..\include\SDL_keysym.h" />
+    <ClInclude Include="..\include\SDL_loadso.h" />
+    <ClInclude Include="..\include\SDL_main.h" />
+    <ClInclude Include="..\include\SDL_mouse.h" />
+    <ClInclude Include="..\include\SDL_mutex.h" />
+    <ClInclude Include="..\include\SDL_name.h" />
+    <ClInclude Include="..\include\SDL_opengl.h" />
+    <ClInclude Include="..\include\SDL_opengles.h" />
+    <ClInclude Include="..\include\SDL_pixels.h" />
+    <ClInclude Include="..\include\SDL_platform.h" />
+    <ClInclude Include="..\include\SDL_power.h" />
+    <ClInclude Include="..\include\SDL_quit.h" />
+    <ClInclude Include="..\include\SDL_rect.h" />
+    <ClInclude Include="..\include\SDL_revision.h" />
+    <ClInclude Include="..\include\SDL_rwops.h" />
+    <ClInclude Include="..\include\SDL_scancode.h" />
+    <ClInclude Include="..\include\SDL_stdinc.h" />
+    <ClInclude Include="..\include\SDL_surface.h" />
+    <ClInclude Include="..\include\SDL_syswm.h" />
+    <ClInclude Include="..\include\SDL_thread.h" />
+    <ClInclude Include="..\include\SDL_timer.h" />
+    <ClInclude Include="..\include\SDL_types.h" />
+    <ClInclude Include="..\include\SDL_version.h" />
+    <ClInclude Include="..\include\SDL_video.h" />
+    <ClInclude Include="..\src\audio\dummy\SDL_dummyaudio.h" />
+    <ClInclude Include="..\src\audio\SDL_audiodev_c.h" />
+    <ClInclude Include="..\src\audio\SDL_audiomem.h" />
+    <ClInclude Include="..\src\audio\SDL_audio_c.h" />
+    <ClInclude Include="..\src\audio\SDL_mixer_m68k.h" />
+    <ClInclude Include="..\src\audio\SDL_mixer_MMX.h" />
+    <ClInclude Include="..\src\audio\SDL_mixer_MMX_VC.h" />
+    <ClInclude Include="..\src\audio\SDL_sysaudio.h" />
+    <ClInclude Include="..\src\audio\SDL_wave.h" />
+    <ClInclude Include="..\src\events\blank_cursor.h" />
+    <ClInclude Include="..\src\events\default_cursor.h" />
+    <ClInclude Include="..\src\events\scancodes_darwin.h" />
+    <ClInclude Include="..\src\events\scancodes_linux.h" />
+    <ClInclude Include="..\src\events\scancodes_win32.h" />
+    <ClInclude Include="..\src\events\scancodes_xfree86.h" />
+    <ClInclude Include="..\src\events\SDL_events_c.h" />
+    <ClInclude Include="..\src\events\SDL_keyboard_c.h" />
+    <ClInclude Include="..\src\events\SDL_mouse_c.h" />
+    <ClInclude Include="..\src\events\SDL_sysevents.h" />
+    <ClInclude Include="..\src\events\SDL_windowevents_c.h" />
+    <ClInclude Include="..\src\SDL_error_c.h" />
+    <ClInclude Include="..\src\SDL_fatal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\atomic\win32\SDL_atomic.c" />
+    <ClCompile Include="..\src\audio\dummy\SDL_dummyaudio.c" />
+    <ClCompile Include="..\src\audio\SDL_audio.c" />
+    <ClCompile Include="..\src\audio\SDL_audiocvt.c" />
+    <ClCompile Include="..\src\audio\SDL_audiodev.c" />
+    <ClCompile Include="..\src\audio\SDL_audiotypecvt.c" />
+    <ClCompile Include="..\src\audio\SDL_mixer.c" />
+    <ClCompile Include="..\src\audio\SDL_mixer_m68k.c" />
+    <ClCompile Include="..\src\audio\SDL_mixer_MMX.c" />
+    <ClCompile Include="..\src\audio\SDL_mixer_MMX_VC.c" />
+    <ClCompile Include="..\src\audio\SDL_wave.c" />
+    <ClCompile Include="..\src\cpuinfo\SDL_cpuinfo.c" />
+    <ClCompile Include="..\src\events\SDL_events.c" />
+    <ClCompile Include="..\src\events\SDL_keyboard.c" />
+    <ClCompile Include="..\src\events\SDL_mouse.c" />
+    <ClCompile Include="..\src\events\SDL_quit.c" />
+    <ClCompile Include="..\src\events\SDL_windowevents.c" />
+    <ClCompile Include="..\src\file\SDL_rwops.c" />
+    <ClCompile Include="..\src\SDL.c" />
+    <ClCompile Include="..\src\SDL_assert.c" />
+    <ClCompile Include="..\src\SDL_compat.c" />
+    <ClCompile Include="..\src\SDL_error.c" />
+    <ClCompile Include="..\src\SDL_fatal.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
